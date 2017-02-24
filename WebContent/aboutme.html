@@ -1,0 +1,545 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<title>aboutme</title>
+		<!--[if lt IE 9]>
+ 		 <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+ 		 <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+ 		      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" />
+		<link href="./style/footer.css" rel="stylesheet" />
+		<link href="./style/aboutme.css" rel="stylesheet" />
+		<link rel="shortcut icon" type="image/x-icon" href="./image/web.ico" media="screen" /> 
+
+		<!-- 照片墙效果参考http://www.17sucai.com/pins/demoshow/19054 -->
+	</head>
+<body>
+	<header id="section-1">
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="banner">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"><span class="sr-only">toggle</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+					<a class="navbar-brand " href="#">数字档案馆</a>
+				</div>
+				<nav class="navbar-collapse bs-navbar-collapse collapse" style="height:1px" aria-expanded="false" role="navigation">
+					<ul class="nav navbar-nav" id="nav">
+						<!-- <li class="active">
+							<a href="">主页</a>
+						</li>
+						<li>
+							<a href="#">借阅登记</a>
+						</li>
+						<li>
+							<a hrefe="#">预约借阅</a>
+						</li>
+						<li>
+							<a hrefe="#">查询</a>
+						</li>-->
+						
+						<!-- 菜单列表-->
+						
+					</ul>
+						<ul class="nav navbar-nav navbar-right" id="checkname">
+						
+					<!-- 验证用户 -->
+					
+						</ul> 
+					<ul class="nav navbar-nav visible-xs">
+						<li class="active">
+							<a href="">个人信息</a>
+						</li>
+						<li>
+							<a href="#">浏览历史</a>
+						</li>
+						<li>
+							<a hrefe="#">借阅历史</a>
+						</li>
+						<li>
+							<a href="#">系统消息</a>
+						</li>
+						<li>
+							<a hrefe="#">信息推荐</a>
+						</li>
+					</ul>
+				</nav>
+				
+			</div>
+		</nav>
+	</header>
+	<div class="navigation" id="section-1">
+		<h1>record</h1><ul class="navigationTwo"><li>使用指南</li>
+		<li>档案利用制度</li>
+		<li>FAQ</li><li>意见反馈</li>
+		<li>联系我们</li></ul>
+	</div>
+	<div class="section">
+		<div class="banner"></div>
+		
+			<div class="how_find col-xs-12">
+				<div class="theme_title">检索指南</div>
+				<p class="tips">一般检索：选择查询关键字类别(文本类型，图形图像类型，视频类型)，输入查询条件（系统默认为模糊查询），点击【检索】，返回符合条件的文件，然后可以在返回结果再次选择查询关键字类别，输入查询条件，点击【检索】，再次检索，依次类推，进行多次模糊查询</p>
+				<div class="findapproach col-xs-12 col-sm-4"><h4>文本检索</h4><p>输入要查找的组合条件，包括档案编号、资源来源、文号、题名、成文年度范围、发布机构，点击【检索】，系统将查找到的资源信息返回到当前界面；用户从返回的资源列表中，选择所需的某个资源文档，点击【查看】，系统将显示该资源的详细内容</p></div>
+				<div class="findapproach col-xs-12 col-sm-4"><h4>图形图像检索</h4><p>输入要查找的组合条件，包括档案编号、资源来源、拍摄者、题名、拍摄时间、发布机构，点击【检索】，系统将查找到的资源信息返回到当前界面。；用户从返回的资源列表中，选择所需的某个资源文档，点击【查看】，系统将显示该资源的详细内容</p></div>
+				<div class="findapproach col-xs-12 col-sm-4"><h4>视频检索</h4><p>输入要查找的组合条件，包括档案编号、资源来源、拍摄者、题名、拍摄时间、发布机构，点击【检索】，系统将查找到的资源信息返回到当前界面。；用户从返回的资源列表中，选择所需的某个资源文档，点击【查看】，系统将显示该资源的详细内容</p></div>
+			</div>
+		<div class="bespeak col-xs-12">
+			<div class="theme_title">预约登记</div>
+			<p class="findapproach">若您是浏览身份进入主界面，先检索出所需的资源，点击【查看】/【下载】，系统会提示您登录，若您还未注册则移步注册页面进行注册</p>
+			<p class="findapproach">若您已注册，点击进入预约借阅界面，先检索出所需的资源（一个或多个），加入预约借阅单，填写预约借阅单信息，包括姓名、证件类型及证件编号等，其中预约日应在系统时间的三个工作日之后，点击【提交】，将预约单给系统，系统保存该预约记录。</p>
+			<p class="findapproach">当工作人员浏览到该预约单时，会根据预约借阅的档案资源，核查该资源是否可借，若可借，则认可该预约，系统将会给该预约一个预约借阅号，并会自动向该用户发送预约成功的消息</p>
+		</div>
+		<div class="more_function col-xs-12">
+			<div class="theme_title">用户功能</div>
+			<p class="tips">以下功能均需要您先注册才能正常使用，若您未注册请前往注册</p>
+			<div class="functions functions_history">
+			<h4>查看系统消息</h4><p>若您已注册，系统主页面会显示系统自动发送消息，您也可点击【系统消息】进行查看，系统会显示最新通知信息。点击【查看历史信息】，系统则显示以往系统通知信息。</p></div>
+			<div class="functions">
+			<h4>查看借阅信息</h4><p>若您已注册，点击【查看借阅历史信息】会进入借阅历史信息页面；点击【详细信息】，界面显示该条借阅具体信息。</p></div>
+			<div class="functions_revise">
+			<h4>修改个人信息</h4><p>若您已注册，则点击【修改个人信息】会进入修改个人信息界面。请根据提示填写您要修改的信息，否则修改不成功。按正确方式填写并点击【保存】，系统验证您修改后的个人信息。若验证成功，系统会提示您“保存成功”，回到主个人信息界面；若验证不成功，会提示您“修改失败”并回到修改个人信息的界面。当您点击【取消】按钮，则不修改并回到未修改前的个人信息界面。</p></div>
+		</div>
+		<div class="interesting">
+			<div class="theme_title">个性化信息推荐</div>
+			<p >若您已注册，系统根据您的兴趣自动发送推荐档案资源，您可点击其中某个资源，进入该资源的详细信息页面进行浏览。通过资源下方的翻页可以查看其他推荐结果，单击每个推荐项，可实现基于该项结果的推荐，双击每个推荐项，可查看该项的详细内容。</p>
+		</div>
+	</div>
+	<div class="institution section">
+		<div class="folder"></div>
+		<div class="heading">档案馆使用制度</div>
+			<p>
+				<span>为了充分发挥馆藏档案的作用，更好地为社会各界提供档案信息服务，并确保在提供利用工作中档案的安全管理，根据《中华人民共和国档案法》及其实施办法、《各级国家档案馆开放档案办法》、《外国组织及个人利用我国档案试行办法》、《婚姻登记档案管理办法》等有关规定，结合我馆实际制定本规定。</span><br />一、档案利用手续<br />（一）开放档案的利用<br />本规定所称开放档案，是指自形成之日起满30年，经审查勿需控制使用的档案和不满30年，但原不带密级、经确认勿需保密的档案。<br />中国公民或组织持有合法证明(介绍信或本人身份证、工作证等)，可利用本馆保存的已开放档案。<br />外国人、外国组织持来华有效证件，由本市外事主管部门或同级以上组织介绍，向本馆提出申请，经同意可以利用本馆开放档案。<br />（二）未开放档案的利用<br />本规定所称未开放档案，是指未到开放期限(经审查确定勿需保密的除外)，或虽到开放期限，经审查认为不宜开放的档案。<br />中国公民或组织利用本馆未开放档案，须持有介绍信，注明利用者身份、利用目的和查档范围，经本馆同意后方可利用。<br />（三）利用已公开的政务信息，参照开放档案利用手续办理。<br />（四）利用有关招工、调动、知青、工龄、工种、婚姻、任免等档案的，须持本人身份证件查询利用；委托他人代查的，应持有委托人身份证件、被委托人身份证。<br />其中，委托他人代查婚姻档案的，还应持有委托人授权书。当事人已经逝世的，其直系亲属或法定继承人凭有关职能主管部门出具的证明文件及本人身份证，方可利用。（五）公安、检察、司法部门及纪检、监察部门办理案件需要利用档案的，凭单位介绍信及查档人员工作证办理利用手续。涉密档案的利用按国家有关保密规定办理。<br />（六）律师在代理诉讼案件时需要利用与代理案件有关档案的，须出示律师事务所介绍信、律师证及代理当事人的委托书和立案证明文件，涉密档案的利用按国家有关保密规定办理。<br />（七）利用移交单位提出限制利用的馆藏档案，利用者须征得移交单位的同意。<br />（八）利用寄存在本馆的档案，利用者须征得档案所有者同意。<br />二、档案的调阅<br />为保护档案原件，本馆已做数字化处理的档案，不提供档案原件查阅。本馆保管的破损、老化和珍贵的档案暂不提供利用。调阅档案原则上每人每天不超过15卷，每次不超过3卷。借还档案时，双方办理交接手续。<br />三、档案的公布<br />本馆馆藏档案的公布权，属于市档案馆及档案形成单位，任何组织和个人无权公布。其他单位如需通过展览、编辑出版等形式公布馆藏档案，须经市档案馆及档案形成单位同意。<br />利用者在发表文章、研究著述中节引、摘用馆藏档案的，须注明“所用资料引自成都市档案馆”，并赠送本馆相关著作。<br />四、档案的复制<br />凡属查阅涉及个人档案、且需用作法律凭证的，填写《复制档案申请单》，由工作人员代为复制并出具档案证明。<br />凡属因编史修志和专题研究，需要复制档案的，填写《复制档案申请单》，经审批同意后，由工作人员代为复制。除编史修志可适当放宽外，其他学术研究等每个专题申请复制的档案不超过30页。<br />允许复制的档案只提供一份复制件，不提供全卷复制。复制件一律加盖“成都市档案馆档案复制专用章”。<br />未经许可，利用者不得使用任何器材拍摄档案，不得摘录或复制与所查问题内容无关的档案。<br />五、利用者在利用过程中应爱护档案，对档案有涂改、损毁、偷盗等行为的，本馆将根据档案价值及损坏情况，责令其赔偿，并依法追究法律责任。<br />六、本规定自2014年3月17日起执行。原有关档案查阅利用的相关规定同时废止。<br />
+			</p>
+	</div>
+	<div class="question section">
+		<div class="heading">常见问题</div>
+		<ul class="question_navigation"><li>最新解答</li>
+		<li>档案查询问题</li>
+		<li>个人档案馆问题</li>
+		<li>其他分类</li></ul>
+		<div class="answer">
+			<div class="panel-group" id="accordion_01">
+				<div class="panel">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_01" 
+							   href="#collapseOne">
+								 2014年副研究馆员评审结果如何查询aaa
+							</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in">
+						<div class="panel-body">
+							 <span>您好，我想咨询下申报评审档案正高级职称－档案专业研究馆员，论文发在国家级核心期刊的增刊，比如《档案学通讯》的增刊，是否可以作为评审的论文，是否认可呢？谢谢</span><br /><span>回复</span><br />
+							 <span>您好！关于档案职称评审详情，请直接拨打（020）38749100咨询。谢谢关注。</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_01" 
+							   href="#collapseTwo">
+								广东省档案信息网开放档案检索
+							</a>
+						</h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse">
+						<div class="panel-body">
+							<span>问： 您好，我正在利用广东省档案信息网开放档案检索功能，但是输入检索关键词后，页面总是显示“您访问的网页并不在此!该网页也许已转移，或者您的链接可能已超时，请确认正确的操作”。请问我该如何在该网站上查找到开放档案？</span><br /><span>回复</span><span>您好！开放档案相关数据库正在进行安全检查。请您直接到我馆查阅大厅或拨打查档热线（020）38749056,38749035 查阅利用。谢谢关注！</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_01" 
+							   href="#collapseThree">
+								晋升档案类的副研究馆员的条件
+							</a>
+						</h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse">
+						<div class="panel-body">
+							<span> 晋升档案类的副研究馆员的条件：对学历、工作年限、论文、获奖成果等等，有没有相关文件，我在网站上没有搜索到。</span><br /><span>回复：</span><br /><span>您好！一、详情请您到广东档案信息网的下载区查阅《广东省档案专业高、中级资格条件》、《广东省人事厅关于深化我省职称制度改革的若干意见》，二、评档案职称不需要考外语，三、需要每年参加不少于12天或72学时的继续教育。谢谢关注！</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_01" 
+							   href="#collapseFour">
+								 黄埔军校 第四期 山东峄县 陈敬 的档案及照片
+							</a>
+						</h4>
+					</div>
+					<div id="collapseFour" class="panel-collapse collapse">
+						<div class="panel-body">
+							<span> 黄埔军校 第四期 山东峄县 陈敬 的档案及照片</span><br /><span>回复：</span><br /><span>您好！同一人的资料您已多次咨询。如是邮箱问题没有收到，请您移步查档咨询栏目留下正确收信邮箱地址；如是您要求的进一步材料没有找到，我馆工作人员经过翻查黄埔军校档案，确定之前已将有关资料全部传送，档案中并无您需要的进一步材料。谢谢关注！</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_01" 
+							   href="#collapseFive">
+								黄埔军校 四期 山东陈敬的详细资料
+							</a>
+						</h4>
+					</div>
+					<div id="collapseFive" class="panel-collapse collapse">
+						<div class="panel-body">
+							<span> 黄埔军校 第四期 山东峄县 陈敬 黄埔军校 第四期 山东峄县 陈敬 的资料 黄埔军校历届毕业生名单第四期1925年7月步兵科一团二连全部人员 毕业后的官职</span><br /><span>回复：</span><br /><span>您好！请把您要查询的黄埔军校学员的姓名、籍贯、期数等资料准备好，附上您要接收资料的电子邮箱地址，在“查档咨询”栏目咨询。</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="answer">
+			<div class="panel-group" id="accordion_02">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_02" 
+							   href="#searchOne">
+								 2014年副研究馆员评审结果如何查询bbb
+							</a>
+						</h4>
+					</div>
+					<div id="searchOne" class="panel-collapse collapse in">
+						<div class="panel-body">
+							 <span>您好，我想咨询下申报评审档案正高级职称－档案专业研究馆员，论文发在国家级核心期刊的增刊，比如《档案学通讯》的增刊，是否可以作为评审的论文，是否认可呢？谢谢</span><br /><span>回复</span><br />
+							 <span>您好！关于档案职称评审详情，请直接拨打（020）38749100咨询。谢谢关注。</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_02" 
+							   href="#searchTwo">
+								广东省档案信息网开放档案检索
+							</a>
+						</h4>
+					</div>
+					<div id="searchTwo" class="panel-collapse collapse">
+						<div class="panel-body">
+							<span>问： 您好，我正在利用广东省档案信息网开放档案检索功能，但是输入检索关键词后，页面总是显示“您访问的网页并不在此!该网页也许已转移，或者您的链接可能已超时，请确认正确的操作”。请问我该如何在该网站上查找到开放档案？</span><br /><span>回复</span><span>您好！开放档案相关数据库正在进行安全检查。请您直接到我馆查阅大厅或拨打查档热线（020）38749056,38749035 查阅利用。谢谢关注！</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_02" 
+							   href="#searchThree">
+								晋升档案类的副研究馆员的条件
+							</a>
+						</h4>
+					</div>
+					<div id="searchThree" class="panel-collapse collapse">
+						<div class="panel-body">
+							<span> 晋升档案类的副研究馆员的条件：对学历、工作年限、论文、获奖成果等等，有没有相关文件，我在网站上没有搜索到。</span><br /><span>回复：</span><br /><span>您好！一、详情请您到广东档案信息网的下载区查阅《广东省档案专业高、中级资格条件》、《广东省人事厅关于深化我省职称制度改革的若干意见》，二、评档案职称不需要考外语，三、需要每年参加不少于12天或72学时的继续教育。谢谢关注！</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_02" 
+							   href="#searchFour">
+								 黄埔军校 第四期 山东峄县 陈敬 的档案及照片
+							</a>
+						</h4>
+					</div>
+					<div id="searchFour" class="panel-collapse collapse">
+						<div class="panel-body">
+							<span> 黄埔军校 第四期 山东峄县 陈敬 的档案及照片</span><br /><span>回复：</span><br /><span>您好！同一人的资料您已多次咨询。如是邮箱问题没有收到，请您移步查档咨询栏目留下正确收信邮箱地址；如是您要求的进一步材料没有找到，我馆工作人员经过翻查黄埔军校档案，确定之前已将有关资料全部传送，档案中并无您需要的进一步材料。谢谢关注！</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_02" 
+							   href="#searchFive">
+								黄埔军校 四期 山东陈敬的详细资料
+							</a>
+						</h4>
+					</div>
+					<div id="searchFive" class="panel-collapse collapse">
+						<div class="panel-body">
+							<span> 黄埔军校 第四期 山东峄县 陈敬 黄埔军校 第四期 山东峄县 陈敬 的资料 黄埔军校历届毕业生名单第四期1925年7月步兵科一团二连全部人员 毕业后的官职</span><br /><span>回复：</span><br /><span>您好！请把您要查询的黄埔军校学员的姓名、籍贯、期数等资料准备好，附上您要接收资料的电子邮箱地址，在“查档咨询”栏目咨询。</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="pagination">
+				<li><a href="#">&laquo;</a></li>
+				<li class="active"><a href="#">1</a></li>
+				<li class="disabled"><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">&raquo;</a></li>
+			</ul>
+		</div>
+		<div class="answer">
+			<div class="panel-group" id="accordion_03">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_03" 
+							   href="#personalOne">
+								 2014年副研究馆员评审结果如何查询ccc
+							</a>
+						</h4>
+					</div>
+					<div id="personalOne" class="panel-collapse collapse in">
+						<div class="panel-body">
+							 <span>您好，我想咨询下申报评审档案正高级职称－档案专业研究馆员，论文发在国家级核心期刊的增刊，比如《档案学通讯》的增刊，是否可以作为评审的论文，是否认可呢？谢谢</span><br /><span>回复</span><br />
+							 <span>您好！关于档案职称评审详情，请直接拨打（020）38749100咨询。谢谢关注。</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_03" 
+							   href="#personalTwo">
+								广东省档案信息网开放档案检索
+							</a>
+						</h4>
+					</div>
+					<div id="personalTwo" class="panel-collapse collapse">
+						<div class="panel-body">
+							<span>问： 您好，我正在利用广东省档案信息网开放档案检索功能，但是输入检索关键词后，页面总是显示“您访问的网页并不在此!该网页也许已转移，或者您的链接可能已超时，请确认正确的操作”。请问我该如何在该网站上查找到开放档案？</span><br /><span>回复</span><span>您好！开放档案相关数据库正在进行安全检查。请您直接到我馆查阅大厅或拨打查档热线（020）38749056,38749035 查阅利用。谢谢关注！</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_03" 
+							   href="#personalThree">
+								晋升档案类的副研究馆员的条件
+							</a>
+						</h4>
+					</div>
+					<div id="personalThree" class="panel-collapse collapse">
+						<div class="panel-body">
+							<span> 晋升档案类的副研究馆员的条件：对学历、工作年限、论文、获奖成果等等，有没有相关文件，我在网站上没有搜索到。</span><br /><span>回复：</span><br /><span>您好！一、详情请您到广东档案信息网的下载区查阅《广东省档案专业高、中级资格条件》、《广东省人事厅关于深化我省职称制度改革的若干意见》，二、评档案职称不需要考外语，三、需要每年参加不少于12天或72学时的继续教育。谢谢关注！</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_03" 
+							   href="#personalFour">
+								 黄埔军校 第四期 山东峄县 陈敬 的档案及照片
+							</a>
+						</h4>
+					</div>
+					<div id="personalFour" class="panel-collapse collapse">
+						<div class="panel-body">
+							<span> 黄埔军校 第四期 山东峄县 陈敬 的档案及照片</span><br /><span>回复：</span><br /><span>您好！同一人的资料您已多次咨询。如是邮箱问题没有收到，请您移步查档咨询栏目留下正确收信邮箱地址；如是您要求的进一步材料没有找到，我馆工作人员经过翻查黄埔军校档案，确定之前已将有关资料全部传送，档案中并无您需要的进一步材料。谢谢关注！</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_03" 
+							   href="#personalFive">
+								黄埔军校 四期 山东陈敬的详细资料
+							</a>
+						</h4>
+					</div>
+					<div id="personalFive" class="panel-collapse collapse">
+						<div class="panel-body">
+							<span> 黄埔军校 第四期 山东峄县 陈敬 黄埔军校 第四期 山东峄县 陈敬 的资料 黄埔军校历届毕业生名单第四期1925年7月步兵科一团二连全部人员 毕业后的官职</span><br /><span>回复：</span><br /><span>您好！请把您要查询的黄埔军校学员的姓名、籍贯、期数等资料准备好，附上您要接收资料的电子邮箱地址，在“查档咨询”栏目咨询。</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="answer">
+			<div class="panel-group" id="accordion_04">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_04" 
+							   href="#OtherOne">
+								 2014年副研究馆员评审结果如何查询ddd
+							</a>
+						</h4>
+					</div>
+					<div id="OtherOne" class="panel-collapse collapse in">
+						<div class="panel-body">
+							 <span>您好，我想咨询下申报评审档案正高级职称－档案专业研究馆员，论文发在国家级核心期刊的增刊，比如《档案学通讯》的增刊，是否可以作为评审的论文，是否认可呢？谢谢</span><br /><span>回复</span><br />
+							 <span>您好！关于档案职称评审详情，请直接拨打（020）38749100咨询。谢谢关注。</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_04" 
+							   href="#OtherTwo">
+								广东省档案信息网开放档案检索
+							</a>
+						</h4>
+					</div>
+					<div id="OtherTwo" class="panel-collapse collapse">
+						<div class="panel-body">
+							<span>问： 您好，我正在利用广东省档案信息网开放档案检索功能，但是输入检索关键词后，页面总是显示“您访问的网页并不在此!该网页也许已转移，或者您的链接可能已超时，请确认正确的操作”。请问我该如何在该网站上查找到开放档案？</span><br /><span>回复</span><span>您好！开放档案相关数据库正在进行安全检查。请您直接到我馆查阅大厅或拨打查档热线（020）38749056,38749035 查阅利用。谢谢关注！</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_04" 
+							   href="#OtherThree">
+								晋升档案类的副研究馆员的条件
+							</a>
+						</h4>
+					</div>
+					<div id="OtherThree" class="panel-collapse collapse">
+						<div class="panel-body">
+							<span> 晋升档案类的副研究馆员的条件：对学历、工作年限、论文、获奖成果等等，有没有相关文件，我在网站上没有搜索到。</span><br /><span>回复：</span><br /><span>您好！一、详情请您到广东档案信息网的下载区查阅《广东省档案专业高、中级资格条件》、《广东省人事厅关于深化我省职称制度改革的若干意见》，二、评档案职称不需要考外语，三、需要每年参加不少于12天或72学时的继续教育。谢谢关注！</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_04" 
+							   href="#OtherFour">
+								 黄埔军校 第四期 山东峄县 陈敬 的档案及照片
+							</a>
+						</h4>
+					</div>
+					<div id="OtherFour" class="panel-collapse collapse">
+						<div class="panel-body">
+							<span> 黄埔军校 第四期 山东峄县 陈敬 的档案及照片</span><br /><span>回复：</span><br /><span>您好！同一人的资料您已多次咨询。如是邮箱问题没有收到，请您移步查档咨询栏目留下正确收信邮箱地址；如是您要求的进一步材料没有找到，我馆工作人员经过翻查黄埔军校档案，确定之前已将有关资料全部传送，档案中并无您需要的进一步材料。谢谢关注！</span>
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion_04" 
+							   href="#OtherFive">
+								黄埔军校 四期 山东陈敬的详细资料
+							</a>
+						</h4>
+					</div>
+					<div id="OtherFive" class="panel-collapse collapse">
+						<div class="panel-body">
+							<span> 黄埔军校 第四期 山东峄县 陈敬 黄埔军校 第四期 山东峄县 陈敬 的资料 黄埔军校历届毕业生名单第四期1925年7月步兵科一团二连全部人员 毕业后的官职</span><br /><span>回复：</span><br /><span>您好！请把您要查询的黄埔军校学员的姓名、籍贯、期数等资料准备好，附上您要接收资料的电子邮箱地址，在“查档咨询”栏目咨询。</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contact section">
+		<div class="heading">联系方式</div>
+		<p>欢迎您光临广东省档案馆查阅利用档案文件！<br />馆址：广东省广州市天河区龙口中路128号广东省档案馆。<br />邮政编号：510630<br />查档服务热线：（020）38749056,38749035<br />传真号码：38749051<br />电子邮箱：gdda@gd.gov.cn<br />查阅服务时间：<br />周一至周五：8：30—12：00，14：00—17：00。节假日可预约查询。<br />展览参观时间：周一至周五：9：00—12：00，14：00—17：00。重要展览节假日展出时间另行公<br />告。公众开放日对外接待时间：<br />每月第二个星期五：9：00—11：30，14：30—16：30<br />办公时间：<br />周一至周五：8：30-12：00，14：00-17：30<br />交通情况：在市内可乘坐41（短线）、78、133、191、883路公共汽车，至天河北路龙口东万佳超市站下车，南进龙口东路100米至龙口中路右拐，前进100米即可到达；也可乘坐18、22、33、50、177、178、194、197、210、214、224、234、240、242、242快线、248、269、289、289快线、296、298、515、549、561路等公共汽车在天河路岗顶站下车，还可乘坐地铁3号线至岗顶站，从龙口西路或龙口东路往北步行10至15分钟便可到达。</p>
+	</div>
+		<a href="#section-1"><img src="image/up.png" style="position:fixed;bottom:100px;right:10%;width:43px;height:30px;z-index: 2;" alt="返回顶部" id="amdee" class="hide" /></a>
+	<footer>
+			<ul class="list-unstyled">
+				<h3>专题档案</h3>
+				<li>
+					<a href="">公民档案</a>
+				</li>
+				<li>
+					<a href="">历史档案</a>
+				</li>
+				<li>
+					<a href="">城市档案</a>
+				</li>
+				<li>
+					<a herf="">土地档案</a>
+				</li>
+				<li>
+					<a href="">...more</a>
+				</li>
+			</ul>
+			<ul class="list-unstyled">
+				<h3>资源</h3>
+				<li>
+					<a href="">最新公布</a>
+				</li>
+				<li>
+					<a href="">A-Z字母索引</a>
+				</li>
+				<li>
+					<a href=- "">发布时间索引</a>
+				</li>
+				<li>
+					<a href="">类别索引</a>
+				</li>
+				<li>
+					<a href="">档案公布</a>
+				</li>
+			</ul>
+			<ul class="list-unstyled">
+				<h3>关于我们</h3>
+				<li>
+					<a href="">使用指南</a>
+				</li>
+				<li>
+					<a href="">档案利用制度</a>
+				</li>
+				<li>
+					<a href="">在线咨询</a>
+				</li>
+				<li>
+					<a href="">FAQ</a>
+				</li>
+				<li>
+					<a href="">收藏夹</a>
+				</li>
+				<li>
+					<a href="">联系我们</a>
+				</li>
+			</ul>
+			<ul class="list-unstyled affix-bottom">
+				<h3>友情链接</h3>
+				<li>
+					<a href="">国家档案馆</a>
+				</li>
+				<li>
+					<a href="">广东省档案馆</a>
+				</li>
+				<li>
+					<a href="">美国国家档案馆</a>
+				</li>
+				<li>
+					<a href="">....more</a>
+				</li>
+			</ul>
+		</footer>	
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+		<script src="./qdapp/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./qdapp/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+		<script src="./qdapp/leftnav.js"></script>
+		<script src="./qdapp/checkuser.js"></script>
+		<script src="./layer/layer.js"></script>
+		<script src="./qdapp/aboutme.js"></script>
+<script>
+	
+</script>
+</body>
+</html>

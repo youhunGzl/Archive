@@ -1,0 +1,35 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-family: "微软雅黑";
+	font-size: 1em;
+}
+header{
+	font-size: 1.1em;
+}
+.list header{
+	font-size: 1.4em;
+}
+.list{
+	width:100%;
+	height:700px;
+	padding:5%;
+
+	margin:0 auto;
+	margin-top:50px;
+}
+.list tr:nth-child(even){
+	background-color: rgba(172,208,247,0.4);
+}
+.bespeaklists{
+	margin-top: 50px;
+}
+.bespeak{
+	background-color:#69F;float:right;padding:5px 12px;border:0px;
+	border-radius:6px;color:#fff;
+	margin-left: 10px;
+}
+.listinfo{
+	line-height: 40px;
+	
+}

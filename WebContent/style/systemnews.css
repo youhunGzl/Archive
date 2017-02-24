@@ -1,0 +1,36 @@
+.top{
+	height:40px;line-height:40px;margin-bottom: 10px;
+}
+.operate{
+	list-style: none;padding:0px;display: inline-block;
+}
+.operate li{
+	float:left;
+}
+
+.operate li a{
+	text-decoration:none;display: block;padding:0px 10px;
+	color:#777;font-weight: bolder;
+}
+.operate li a:hover{
+	/*color:rgb(34,167,240);*/
+	color:rgb(51,122,181);border-bottom:2px solid rgb(51,122,181);
+}
+.operate span{
+	margin-right:3px;
+}
+.list{
+	height:600px;
+}
+.list li{
+	border:1px solid #ddd;
+	margin:20px 0px;padding:1% 2%;position:relative;
+}
+.list a{
+display:inline-block;text-decoration: none;
+position: absolute;
+right:10px;
+}
+.delete_this{
+	color:#f00;
+}

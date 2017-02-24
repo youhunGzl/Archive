@@ -1,0 +1,143 @@
+#choice{
+	margin:0;
+	padding:0;
+	width:95px;
+	height:34px;
+	line-height: 34px;
+	list-style: none;
+	float: left;
+	color:#fff;
+	border-radius: 4px 0px 0px 4px;
+	background-color:#428bca;
+	padding-left: 10px;
+	position: relative;
+}
+
+#choice li{
+	float: left;
+}
+.abc{
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg);		/* IE 9 */
+	-webkit-transform: rotate(180deg);	/* Safari and Chrome */
+	-o-transform: rotate(180deg);		/* Opera */
+	-moz-transform: rotate(180deg);	
+}
+.srange{
+	float: left;
+	padding:0;
+	height: 34px;
+	line-height: 34px;
+	background-color:#222;
+	list-style: none;
+	border-radius:0px 0px 6px 6px ;
+	color: #fff;
+	position: absolute;
+	left:-500%;
+	top:100%;
+}
+.srange li{
+	margin:0;
+	clear:both;
+	padding:0px 10px;
+	width:95px;
+}
+.showr{
+	position:absolute;
+	right:10px;
+}
+
+.go{
+	float:left;
+	border:0;
+	margin:0px;
+	height:34px;
+	padding:0px 15px;
+	background-color:#428bca;
+	border-radius: 0px 3px 3px 0px;
+	position: relative;
+	color:#fff;
+}
+.go:before{
+	content: '';
+	position: absolute;
+	height:0px;
+	width:0px;
+	border:8px solid transparent;
+	border-right-color:#428bca;
+	top:30%;
+	left:-15px;
+}
+#choice-lg{
+	margin:0;
+	padding:0;
+
+	height:45px;
+	float: left;
+	line-height: 45px;
+	list-style: none;
+	font-size: 1.1em;
+	color:#fff;
+	border-radius: 4px 0px 0px 4px;
+	background-color:#428bca;
+	padding-left: 10px;
+	position: relative;
+}
+#choice-lg li{
+	float: left;
+}
+.showr-lg{
+	position:absolute;
+	right:10px;
+}
+.search-lg{
+	height:45px;
+	float:left;
+	margin:0;
+	padding:0;
+}
+.srange-lg{
+	float: left;
+	padding:0;
+	height: 40px;
+	line-height:40px;
+	background-color:rgb(220,220,220);
+	list-style: none;
+	border-radius:0px 0px 6px 6px ;
+	color:#000;
+	position: absolute;
+	left:-550%;
+	top:100%;
+}
+.srange-lg li{
+	margin:0;
+	clear:both;
+	padding:0px 10px;
+}
+.go-lg{
+	float:left;
+	border:0;
+	margin:0px;
+	height:45px;
+	padding:0px 25px;
+	font-size: 1.1em;
+	background-color:#428bca;
+	border-radius: 0px 3px 3px 0px;
+	position: relative;
+	color:#fff;
+}
+.go-lg:before{
+	content: '';
+	position: absolute;
+	height:0px;
+	width:0px;
+	border:8px solid transparent;
+	border-right-color:#428bca;
+	top:30%;
+	left:-15px;
+	transform: scale(1.2,1.2);
+	-ms-transform: scale(1.2,1.2);	/* IE 9 */
+	-webkit-transform: scale(1.2,1.2);/* Safari and Chrome */
+	-o-transform: scale(1.2,1.2);	/* Opera */
+	-moz-transform: scale(1.2,1.2);
+}

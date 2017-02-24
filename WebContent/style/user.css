@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;padding:0;margin:0;
+}
+body {
+	font-family: "微软雅黑";
+	font-size: 1.5em;
+	overflow: scroll;
+}
+
+.pull-left {
+	font-size: 1em;
+}
+.boldf{
+	font-weight:bold;
+}
+ul{
+	list-style: none;
+}
+.record{clear:both;font-size: 1.5em;padding:0 10%;margin-top: 70px;margin-bottom:3%;}
+.record h1{font-size:2em;}
+.cirborder{
+	border-radius:100px;
+	width:13rem;
+	height:13rem;
+}
+.userimage{
+	padding:2% 8%;line-height:13rem;background-repeat: no-repeat;background-size: 100%;background-color:#3498db;color:#fff;
+}
+.logintime{float:right;font-size:1.2em;}
+
+@keyframes persona{
+	from{opacity:0;transform:rotateX(90deg);}
+	to{opacity:1;transform:rotateX(0deg);
+	}
+}
+@-webkit-keyframes persona{
+	from{opacity:0;-webkit-transform:rotateX(90deg);}
+	to{opacity:1;-webkit-transform:rotateX(0deg);
+	}
+}
+@-mox-keyframes myanimation{
+	from{opacity:0;transform:rotateX(90deg)}
+	to{opacity:1;transform:rotateX(0deg);}
+}
+@-o-keyframes myanimation{
+	from{opacity:0;transform:rotateX(90deg)}
+	to{opacity:1;transform:rotateX(0deg);}
+}
+
+.haircut{
+	font-size:1em;position:absolute;right:3px;
+}
+
+.active{
+	border-bottom:2px solid #3498db;
+}
+.select{
+	height:40px;
+	margin-bottom: 20px;
+}
+.show{display:block;}
+.hidden{display: none;}
+.changes{
+	width:80%;
+	margin:auto;
+}
+@media(min-width:768px){
+	#userbody{margin-top: 50px}
+	.leftdao{width:100%;margin-top: 50px;float:left;
+	border-right:0.5rem solid #3498db;background-color:#333;
+}
+.leftdao>li{
+	height:50px;line-height:50px;
+	text-align:center;
+	position: relative;
+	color:#f0f0f0;
+}
+.leftdao>li:hover{
+	background-color:#444;box-shadow:5px 0 0 #3498db;
+}.personal{
+	position: absolute;z-index:2;
+	top:0;right:-9rem;background-color:#3498db;text-align:center;display: none;
+}
+.personal li{
+	letter-spacing: 2px;width:9rem;
+	height:4rem;line-height: 4rem;
+}
+.personal li:hover{
+	background-color:#39a9f4;
+}.person:hover .personal{display:block;animation:persona 0.5s;-webkit-animation:persona 0.5s;}
+}
+@media(max-width:767px ){
+.leftdao{width:100%;height:4rem;margin-bottom:2rem;position:relative;color:#fff;background-color:#3498db;line-height:4rem;text-align: center;}
+.leftdao>li{width:25%;float: left;}
+.personal{width:25%;position:absolute;top:4rem;left:0;z-index:3;background-color:#333;display:none;}
+.person:hover .personal{display:block;animation:persona 0.5s;-webkit-animation:persona 0.5s;}
+}
+
+
+

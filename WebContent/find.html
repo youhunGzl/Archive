@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<title>搜寻结果页面</title>
+		<!--[if lt IE 9]>
+		   <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+		   <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="./style/bootstrap.min.css" />
+		<link href="./style/choice.css" rel="stylesheet" />
+		<link href="./style/footer.css" rel="stylesheet" />
+		<link href="./style/blue.css" rel="stylesheet" />
+		<link rel="shortcut icon" type="image/x-icon" href="./image/web.ico" media="screen" /> 
+		 <link href="./style/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" type="text/css" href="./style/find.css">
+	</head>
+
+	<body>
+		<header id="section-1">
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="banner">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"><span class="sr-only">toggle</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+					<a class="navbar-brand " href="#">数字档案馆</a>
+				</div>
+				<nav class="navbar-collapse bs-navbar-collapse collapse" style="height:1px" aria-expanded="false" role="navigation">
+					<ul class="nav navbar-nav" id="nav">
+						<!-- <li class="active">
+							<a href="">主页</a>
+						</li>
+						<li>
+							<a href="#">借阅登记</a>
+						</li>
+						<li>
+							<a hrefe="#">预约借阅</a>
+						</li>
+						<li>
+							<a hrefe="#">查询</a>
+						</li>-->
+						
+						<!-- 菜单列表-->
+						
+					</ul>
+						<ul class="nav navbar-nav navbar-right" id="checkname">
+						
+					<!-- 验证用户 -->
+					
+						</ul> 
+					<ul class="nav navbar-nav visible-xs">
+						<li class="active">
+							<a href="">个人信息</a>
+						</li>
+						<li>
+							<a href="#">浏览历史</a>
+						</li>
+						<li>
+							<a hrefe="#">借阅历史</a>
+						</li>
+						<li>
+							<a href="#">系统消息</a>
+						</li>
+						<li>
+							<a hrefe="#">信息推荐</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</nav>
+	</header>
+	<div content="" style="height:100px;"></div>
+	<div class="center-block col-xs-12 col-sm-9" style="padding:0px;padding-top:20px;">
+		<form class="form-horizontal col-sm-8 col-xs-12" role="search" style="padding:0;float:right;">
+			<ul id="choice-lg" class="col-xs-4 col-sm-3">
+					<li  style="width:100%;text-align:center">检索
+					</li>
+			</ul>
+			<input class="search-lg col-xs-5 col-sm-7" type="text" id="keywork"/>
+			<input type="button" class="go-lg col-xs-2" value="提交" onclick="getall()"/>			
+		</form>
+		<br />
+		
+	</div>
+	<div class="col-xs-12">
+		<ul class="findstage">
+			<li><input type="radio" name="flat-blue" id="file" value="file"/>&nbsp;&nbsp;<lable>文本检索</label></li>
+			<li><input type="radio" name="flat-blue" id="material" value="material" />&nbsp;&nbsp;<lable>资料档案检索</lable></li>
+			<li><input type="radio" name="flat-blue" id="multimedia" value="multimedia" />&nbsp;&nbsp;<lable>多媒体检索</lable></li>
+		</ul>
+		<input type="hidden" id="tran" value="file">
+		
+		<form class="filter form-inline">
+			<input type="hidden" name="catalogvalue" id="catalogvalue" />
+			<div class="keyword">
+				<h4 class="col-sm-2 col-xs-12">关键字类别：</h4>
+				<div class="col-sm-10 col-xs-12">
+				<div class="col-sm-6 col-md-4 col-xs-12"><label class="col-xs-12 col-sm-4  control-label">资源来源</label><div class="col-sm-8"><input type="text" class="form-control" name="keyword" id="unit_code1" /></div></div>
+				<div class="col-sm-6 col-md-4 col-xs-12"><label class="col-xs-4 col-sm-4 control-label">题名</label><div class="col-sm-8"><input type="text" class="form-control " name="keyword" id="name1" /></div></div>
+				<div class="col-sm-6 col-md-4 col-xs-12"><label class="col-xs-12 col-sm-4 control-label">发布机构</label><div class="col-sm-8"><input type="text" class="form-control" name="keyword" id="author1" /></div></div>
+				<div class="col-sm-6 col-md-4 col-xs-12"><label class="col-xs-12 col-sm-4 control-label">文号</label><div class="col-sm-8"><input type="text" class="form-control" name="keyword" id="file_no1" /></div> </div>
+				<div class="col-sm-6 col-md-4 col-xs-12"><label class="col-xs-12 col-sm-4 control-label">发文序号</label><div class="col-sm-8"><input type="text" class="form-control" name="keyword" id="piece_no1" ></div></div>
+				<div class="col-sm-6 col-md-4 col-xs-12"><label class="col-xs-12 col-sm-4 control-label">档案编号</label><div class="col-sm-8"><input type="text" class="form-control" name="keyword" id="resource_no1" ></div></div>
+				<div class="col-sm-6 col-md-5 col-xs-12">
+	                <label for="dtp_input2" class="col-xs-12 col-sm-4 control-label">成文时间</label>
+	                <div class="input-group date form_date col-sm-8 col-xs-12" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd" id="form_date">
+	                    <input class="form-control" size="16" type="text" value="" id="firstcreate_time1" readonly>
+	                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+						<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+	                </div>
+					<input type="hidden" id="dtp_input2" value="" />
+            	</div>
+            	<div class="col-sm-6 col-md-4 col-xs-12">
+	                <label for="dtp_input2" class="col-xs-12 col-sm-3 control-label">至</label>
+	                <div class="input-group date form_date col-sm-9 col-xs-12" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+	                    <input class="form-control" size="16" type="text" value="" id="endcreate_time1" readonly>
+	                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+						<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+	                </div>
+            	</div>
+            	</div>
+            </div>
+		</form>
+		<form class="filter form-inline">
+			
+			<div class="keyword">
+				<h4 class="col-sm-2 col-xs-12">关键字类别：</h4>
+				<div class="col-sm-10 col-xs-12">
+					<div class="col-sm-6 col-md-4 col-xs-12"><label class="col-xs-12 col-sm-4 control-label">档案编号</label><div class="col-sm-8 col-xs-12"><input type="text" class="form-control col-sm-4 col-xs-12" name="keyword" id="resource_no2"></div></div>
+					<div class="col-sm-6 col-md-4 col-xs-12"><label class="col-xs-12 col-sm-4  control-label">资源来源</label><div class="col-sm-8 col-xs-12"><input type="text" class="form-control col-xs-12" name="keyname" id="unit_code2" /></div></div>
+					<div class="col-sm-6 col-md-4 col-xs-12"><label class="col-xs-12 col-sm-4 control-label">题名</label><div class="col-sm-8 col-xs-12"><input type="text" class="form-control col-xs-12" name="keyname" id="name2" /></div></div>
+					<div class="col-sm-6 col-md-4 col-xs-12"><label class="col-xs-12 col-sm-4 control-label">发布机构</label><div class="col-sm-8 col-xs-12"><input type="text" class="form-control col-xs-12" name="keyname" id="publisher2" /></div></div>
+					<div class="col-sm-6 col-md-4 col-xs-12"><label class="col-xs-12 col-sm-4 control-label">拍摄者</label><div class="col-sm-8 col-xs-12"><input type="text" class="form-control col-sm-4 col-xs-12" name="keyword" id="author2" ></div></div>
+					<div class="col-sm-6 col-md-4 col-xs-12">
+		                <label for="dtp_input2" class="col-xs-12 col-sm-4 control-label">拍摄时间</label>
+		                <div class="input-group date form_date col-sm-8" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy">
+		                    <input class="form-control" size="16" type="text" id="firstcreate_time2" readonly>
+		                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+							<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+		                </div>
+	            	</div>
+	            	<div class="col-sm-6 col-md-4 col-xs-12">
+		                <label for="dtp_input2" class="col-xs-12 col-sm-4 control-label">至</label>
+		                <div class="input-group date form_date col-sm-8" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy">
+		                    <input class="form-control" size="16" type="text" id="endcreate_time2" readonly>
+		                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+							<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+		                </div>
+            		</div>
+            	</div>
+            </div>
+		</form>
+		<form class="filter form-inline">
+			<div class="keyword">
+				<h4 class="col-sm-2 col-xs-12">关键字类别：</h4>
+			<div class="col-sm-10 col-xs-12">
+					<div class="col-sm-6 col-md-4 col-xs-12"><label class="col-xs-12 col-sm-4 control-label">档案编号</label><div class="col-sm-8 col-xs-12"><input type="text" class="form-control col-sm-4 col-xs-12" name="keyword" id="resource_no3"></div></div>
+					<div class="col-sm-6 col-md-4 col-xs-12"><label class="col-xs-12 col-sm-4  control-label">资源来源</label><div class="col-sm-8 col-xs-12"><input type="text" class="form-control col-xs-10" name="keyword" id="unit_code3" /></div></div>
+					<div class="col-sm-6 col-md-4 col-xs-12"><label class="col-xs-12 col-sm-4 control-label">题名</label><div class="col-sm-8 col-xs-12"><input type="text" class="form-control col-xs-12" name="keyword" id="name3" /></div></div>
+					<div class="col-sm-6 col-md-4 col-xs-12"><label class="col-xs-12 col-sm-4 control-label">发布者</label><div class="col-sm-8 col-xs-12"><input type="text" class="form-control col-xs-12" name="keyword" id="author3" /></div></div>
+					<div class="col-sm-6 col-md-4 col-xs-12"><label class="col-xs-12 col-sm-5 control-label">多媒体类型</label><div class="col-sm-7 col-xs-12"><input type="text" class="form-control col-xs-12" name="keyname" id="media_type" /></div></div>
+	            	<div class="col-sm-6 col-md-4 col-xs-12">
+		                <label for="dtp_input2" class="col-xs-12 col-sm-4 control-label">拍摄时间</label>
+		                <div class="input-group date form_date col-sm-8" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy">
+		                    <input class="form-control" size="16" type="text" id="firstcreate_time3" readonly>
+		                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+							<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+		                </div>
+	            	</div>
+	            	<div class="col-sm-6  col-md-4 col-xs-12">
+		                <label for="dtp_input2" class="col-xs-12 col-sm-4 control-label">至</label>
+		                <div class="input-group date form_date col-sm-8" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy">
+		                    <input class="form-control" size="16" type="text" id="endcreate_time3" readonly>
+		                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+							<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+		                </div>
+	            	</div>
+	            </div>
+            </div>
+		</form>
+	</div>
+	<div class="pull-left col-xs-11" style="margin-left:3%;margin-top:40px;">
+		<div class="col-md-2 hidden-xs ">
+			<div class="panel-group" id="catalog">
+				<!-- <div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">文献来源</a>
+						</h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in">
+						<div class="panel-body">
+							
+									<a href="#">广东省档案馆<span class="badge pull-right">42</span></a>
+						</div>
+						<div class="panel-body">
+									<a href="#">广州市档案馆<span class="badge pull-right">42</span></a>
+						</div>
+						<div class="panel-body">
+									<a href="#">区档案馆<span class="badge pull-right">42</span></a>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+		<div class="col-md-10">
+			<a href="#" class="list-group-item active">查询结果</a>
+			<ul class="list-group" id="tblStaffInfo">
+									<!-- 档案 -->
+									
+			</ul>
+			<nav class="pull-right" id="page">
+				<!-- <ul class="pagination" id="page">
+				
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li> 
+					
+				</ul> -->
+				
+			</nav>
+		</div>
+		<form action="">
+					<input type="hidden" name="totalPages" id="totalPages"/><!-- 总页数 -->
+					<input type="hidden" name="currentPage" id="currentPage" value="1"/><!-- 当前页数 -->
+				</form>
+				
+
+	</div>
+	<div class="pull-right col-xs-1 col-sm-1" style="margin-right:5px;padding-left:0px;">
+			<a href="#section-1"><img src="image/up.png" style="position:fixed;bottom:80px;width:43px;height:30px;" alt="返回顶部" id="amdee" class="hide" /></a>
+	</div>
+	<footer>
+			<ul class="list-unstyled">
+				<h3>专题档案</h3>
+				<li>
+					<a href="">公民档案</a>
+				</li>
+				<li>
+					<a href="">历史档案</a>
+				</li>
+				<li>
+					<a href="">城市档案</a>
+				</li>
+				<li>
+					<a herf="">土地档案</a>
+				</li>
+				<li>
+					<a href="">...more</a>
+				</li>
+			</ul>
+			<ul class="list-unstyled">
+				<h3>资源</h3>
+				<li>
+					<a href="">最新公布</a>
+				</li>
+				<li>
+					<a href="">A-Z字母索引</a>
+				</li>
+				<li>
+					<a href=- "">发布时间索引</a>
+				</li>
+				<li>
+					<a href="">类别索引</a>
+				</li>
+				<li>
+					<a href="">档案公布</a>
+				</li>
+			</ul>
+			<ul class="list-unstyled">
+				<h3>关于我们</h3>
+				<li>
+					<a href="">使用指南</a>
+				</li>
+				<li>
+					<a href="">档案利用制度</a>
+				</li>
+				<li>
+					<a href="">在线咨询</a>
+				</li>
+				<li>
+					<a href="">FAQ</a>
+				</li>
+				<li>
+					<a href="">收藏夹</a>
+				</li>
+				<li>
+					<a href="">联系我们</a>
+				</li>
+			</ul>
+			<ul class="list-unstyled">
+				<h3>友情链接</h3>
+				<li>
+					<a href="">国家档案馆</a>
+				</li>
+				<li>
+					<a href="">广东省档案馆</a>
+				</li>
+				<li>
+					<a href="">美国国家档案馆</a>
+				</li>
+				<li>
+					<a href="">....more</a>
+				</li>
+			</ul>
+		</footer>
+
+		<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+		<script src="./qdapp/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./qdapp/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+		<script src="./qdapp/choice.js"></script>
+		<script src="./qdapp/icheck.js"></script>
+		<script src="./qdapp/checkuser.js"></script>
+		<script src="./qdapp/leftnav.js"></script>
+		<script src="./layer/layer.js"></script>
+		<script src="./qdapp/find.js"></script>
+	</body>
+
+</html>

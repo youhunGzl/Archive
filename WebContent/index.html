@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<title>主页</title>
+		<!--[if lt IE 9]>
+		  <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+		  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		   <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="./style/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="./style/index.css">
+		<link href="./style/blue.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="./style/footer.css">
+<link rel="shortcut icon" type="image/x-icon" href="./image/web.ico" media="screen" /> 
+	</head>
+	<body>
+		<header id="section-1">
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="banner">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"><span class="sr-only">toggle</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+					<a class="navbar-brand " href="#">数字档案馆</a>
+				</div>
+				<nav class="navbar-collapse bs-navbar-collapse collapse" style="height:1px" aria-expanded="false" role="navigation">
+					<ul class="nav navbar-nav" id="nav">
+						<!-- <li class="active">
+							<a href="">主页</a>
+						</li>
+						<li>
+							<a href="#">借阅登记</a>
+						</li>
+						<li>
+							<a hrefe="#">预约借阅</a>
+						</li>
+						<li>
+							<a hrefe="#">查询</a>
+						</li>-->
+						
+						<!-- 菜单列表-->
+						
+					</ul>
+						<ul class="nav navbar-nav navbar-right" id="checkname">
+						
+					<!-- 验证用户 -->
+					
+						</ul>  
+				</nav>
+			</div>
+		</nav>
+	</header>
+	<div class="col-xs-12 banner">
+		<div class="find">
+		<input type="text" name="搜索" id="keywork" placeholder="请输入搜索词" title="请输入搜索词"/><button onclick="findym()">搜索</button>
+		</div>
+		<ul class="findstage">
+			<li><input type="radio" name="flat-blue" id="file" value="file" checked/>&nbsp;&nbsp;<lable>文本检索</label></li>
+			<li><input type="radio" name="flat-blue" id="material" value="material" />&nbsp;&nbsp;<lable>资料档案检索检索</lable></li>
+			<li><input type="radio" name="flat-blue" id="multimedia" value="multimedia" />&nbsp;&nbsp;<lable>多媒体检索</lable></li>
+		</ul>
+		<input type="hidden" id="tran" value="file">
+		
+	</div>
+	<div class="col-xs-12 col-sm-offset-1 col-sm-5">
+		<header class="news"><a href="#" class="pull-left">新闻动态</a><a href="#" class="pull-right">更多<span class="more-dot">...</span></a></header>
+		<div class="province-news"><a href="#">粤档要闻</a><a href="#">国务院信息</a><a href="#">政府文件</a></div>
+		<div class="province">
+		<a href=""><span class="news-text">讲堂进校园 名家述乡贤——名人名..</span></a>
+		<a href=""><span class="news-text">广东省档案局馆完成安防系统升级改..</span></a>
+		<a href=""><span class="news-text">省档案局与省代建局完成全省档案异..</span></a>
+		<a href=""><span class="news-text">我省出台档案事业发展“十三五”规划</span></a>
+		</div>
+		<div class="province">
+		<a href=""><span class="news-text">广东省档案局馆完成安防系统升级改..</span></a>
+		<a href=""><span class="news-text">省档案局与省代建局完成全省档案异..</span></a>
+		<a href=""><span class="news-text">斐济外宾参观省档案局馆</span></a>
+		<a href=""><span class="news-text">广东省政协副主席唐豪到省档案馆调研时..</span></a></div>
+		<div class="province"><a href=""><span class="news-text">讲堂进校园 名家述乡贤——名人名..</span></a>
+		<a href=""><span class="news-text">广东省档案局（馆）认真学习贯彻省委十..</span></a>
+		<a href=""><span class="news-text">中国档案学会理事长段东升出席民间档案..</span></a>
+		<a href=""><span class="news-text">广东省政协副主席唐豪到省档案馆调研时..</span></a></div>
+	</div>
+	<div class="col-xs-12 col-sm-5">
+		<header class="news"><a href="#" class="pull-left">通知公告</a><a href="#" class="pull-right">更多<span class="more-dot">...</span></a></header>
+		<div class="news-container"><a href="#"><span class="title-number">01</span><span class="news-text">全球最大的中文 Web 技术教程。... W3School 友情链接 Firefox 中文社区 W3C 中国总部 w3ctech Search: 参考手册 HTML/HTML5 </span></a>
+		<a href="#"><span class="title-number">01</span><span class="news-text">全球最大的中文 Web 技术教程。... W3School 友情链接 Firefox 中文社区 W3C 中国总部 w3ctech Search: 参考手册 HTML/HTML5 </span></a>
+		<a href="#"><span class="title-number">01</span><span class="news-text">全球最大的中文 Web 技术教程。... W3School 友情链接 Firefox 中文社区 W3C 中国总部 w3ctech Search: 参考手册 HTML/HTML5 </span></a>
+		<a href="#"><span class="title-number">01</span><span class="news-text">全球最大的中文 Web 技术教程。... W3School 友情链接 Firefox 中文社区 W3C 中国总部 w3ctech Search: 参考手册 HTML/HTML5 </span></a></div>
+	</div>
+	<div class="col-xs-12 col-sm-offset-1 col-sm-5">
+		<header class="news"><a href="#" class="pull-left">最新档案</a><a href="#" class="pull-right">更多<span class="more-dot">...</span></a></header>
+		<div class="news-container" id="newsbody">
+		<a href="#"><span class="title-number">01</span><span class="news-text">全球最大的中文 Web 技术教程。... W3School 友情链接 Firefox 中文社区 W3C 中国总部 w3ctech Search: 参考手册 HTML/HTML5 </span></a>
+		<a href="#"><span class="title-number">01</span><span class="news-text">全球最大的中文 Web 技术教程。... W3School 友情链接 Firefox 中文社区 W3C 中国总部 w3ctech Search: 参考手册 HTML/HTML5 </span></a>
+		<a href="#"><span class="title-number">01</span><span class="news-text">全球最大的中文 Web 技术教程。... W3School 友情链接 Firefox 中文社区 W3C 中国总部 w3ctech Search: 参考手册 HTML/HTML5 </span></a>
+		<a href="#"><span class="title-number">01</span><span class="news-text">全球最大的中文 Web 技术教程。... W3School 友情链接 Firefox 中文社区 W3C 中国总部 w3ctech Search: 参考手册 HTML/HTML5 </span></a>
+		</div>
+	</div>
+	<div class="col-sm-5 col-xs-12">
+		<header class="news"><a href="#" class="pull-left">浏览最多</a><a href="#" class="pull-right">更多<span class="more-dot">...</span></a></header>
+		<div class="news-container" id="maxbody">
+		<a href="#"><span class="title-number">01</span><span class="news-text">全球最大的中文 Web 技术教程。... W3School 友情链接 Firefox 中文社区 W3C 中国总部 w3ctech Search: 参考手册 HTML/HTML5 </span></a>
+		<a href="#"><span class="title-number">01</span><span class="news-text">全球最大的中文 Web 技术教程。... W3School 友情链接 Firefox 中文社区 W3C 中国总部 w3ctech Search: 参考手册 HTML/HTML5 </span></a>
+		<a href="#"><span class="title-number">01</span><span class="news-text">全球最大的中文 Web 技术教程。... W3School 友情链接 Firefox 中文社区 W3C 中国总部 w3ctech Search: 参考手册 HTML/HTML5 </span></a>
+		<a href="#"><span class="title-number">01</span><span class="news-text">全球最大的中文 Web 技术教程。... W3School 友情链接 Firefox 中文社区 W3C 中国总部 w3ctech Search: 参考手册 HTML/HTML5 </span></a></div>
+	</div>
+	<div class="section-title"><span>历史今天</span></div>
+	<div id="historydaybody">
+	<div class="history history-l">
+		<p><a href="#">公元1941年12月7日--日本偷袭珍珠港</a></p>
+		<p><a href="#">公元1941年12月7日--日本偷袭珍珠港</a></p>
+		<p><a href="#">公元1941年12月7日--日本偷袭珍珠港</a></p>
+		<p><a href="#">公元1941年12月7日--日本偷袭珍珠港</a></p>
+	</div>
+	<div class="history history-r">
+		<p><a href="#">公元1941年12月7日--日本偷袭珍珠港</a></p>
+		<p><a href="#">公元1941年12月7日--日本偷袭珍珠港</a></p>
+		<p><a href="#">公元1941年12月7日--日本偷袭珍珠港</a></p>
+		<p><a href="#">公元1941年12月7日--日本偷袭珍珠港</a></p>
+	</div>
+	
+	</div>
+	<div class="section-title"><span>为您推荐</span></div>
+	<div class="foryou col-sm-offset-1" id ="recommendbody">
+		<p class="for-younews col-xs-12 col-sm-5"><span class="for-time"><b>12/7</b>1941</span><a href="#"><b>总理念兹在兹“民生之本”：就业是经济最好的底色</b>就业继续稳健增长，一个大的背景是近期中国经济保持了稳健增长，经济形势向好。数据显示，今年的经济增速始终保持在6.5％至7％区间，尽管与前几年的高增长相比，增速有一定回落，但在全球范围内看，仍十分亮眼。</a></p>
+		<p class="for-younews col-xs-12 col-sm-5"><span class="for-time"><b>12/7</b>1941</span><a href="#"><b>总理念兹在兹“民生之本”：就业是经济最好的底色</b>就业继续稳健增长，一个大的背景是近期中国经济保持了稳健增长，经济形势向好。数据显示，今年的经济增速始终保持在6.5％至7％区间，尽管与前几年的高增长相比，增速有一定回落，但在全球范围内看，仍十分亮眼。</a></p>
+		<p class="for-younews col-xs-12 col-sm-5"><span class="for-time"><b>12/7</b>1941</span><a href="#"><b>总理念兹在兹“民生之本”：就业是经济最好的底色</b>就业继续稳健增长，一个大的背景是近期中国经济保持了稳健增长，经济形势向好。数据显示，今年的经济增速始终保持在6.5％至7％区间，尽管与前几年的高增长相比，增速有一定回落，但在全球范围内看，仍十分亮眼。</a></p>
+		<p class="for-younews col-xs-12 col-sm-5"><span class="for-time"><b>12/7</b>1941</span><a href="#"><b>总理念兹在兹“民生之本”：就业是经济最好的底色</b>就业继续稳健增长，一个大的背景是近期中国经济保持了稳健增长，经济形势向好。数据显示，今年的经济增速始终保持在6.5％至7％区间，尽管与前几年的高增长相比，增速有一定回落，但在全球范围内看，仍十分亮眼。</a></p>
+		<p class="for-younews col-xs-12 col-sm-5"><span class="for-time"><b>12/7</b>1941</span><a href="#"><b>总理念兹在兹“民生之本”：就业是经济最好的底色</b>就业继续稳健增长，一个大的背景是近期中国经济保持了稳健增长，经济形势向好。数据显示，今年的经济增速始终保持在6.5％至7％区间，尽管与前几年的高增长相比，增速有一定回落，但在全球范围内看，仍十分亮眼。</a></p>
+		<p class="for-younews col-xs-12 col-sm-5"><span class="for-time"><b>12/7</b>1941</span><a href="#"><b>总理念兹在兹“民生之本”：就业是经济最好的底色</b>就业继续稳健增长，一个大的背景是近期中国经济保持了稳健增长，经济形势向好。数据显示，今年的经济增速始终保持在6.5％至7％区间，尽管与前几年的高增长相比，增速有一定回落，但在全球范围内看，仍十分亮眼。</a></p>
+	</div>
+	<footer>
+		<ul class="list-unstyled">
+			<h3>专题档案</h3>
+			<li>
+				<a href="">公民档案</a>
+			</li>
+			<li>
+				<a href="">历史档案</a>
+			</li>
+			<li>
+				<a href="">城市档案</a>
+			</li>
+			<li>
+				<a herf="">土地档案</a>
+			</li>
+			<li>
+				<a href="">...more</a>
+			</li>
+		</ul>
+		<ul class="list-unstyled">
+			<h3>资源</h3>
+			<li>
+				<a href="">最新公布</a>
+			</li>
+			<li>
+				<a href="">A-Z字母索引</a>
+			</li>
+			<li>
+				<a href=- "">发布时间索引</a>
+			</li>
+			<li>
+				<a href="">类别索引</a>
+			</li>
+			<li>
+				<a href="">档案公布</a>
+			</li>
+		</ul>
+		<ul class="list-unstyled">
+			<h3>关于我们</h3>
+			<li>
+				<a href="">使用指南</a>
+			</li>
+			<li>
+				<a href="">档案利用制度</a>
+			</li>
+			<li>
+				<a href="">在线咨询</a>
+			</li>
+			<li>
+				<a href="">FAQ</a>
+			</li>
+			<li>
+				<a href="">收藏夹</a>
+			</li>
+			<li>
+				<a href="">联系我们</a>
+			</li>
+		</ul>
+		<ul class="list-unstyled">
+			<h3>友情链接</h3>
+			<li>
+				<a href="">国家档案馆</a>
+			</li>
+			<li>
+				<a href="">广东省档案馆</a>
+			</li>
+			<li>
+				<a href="">美国国家档案馆</a>
+			</li>
+			<li>
+				<a href="">....more</a>
+			</li>
+		</ul>
+	</footer>
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="./qdapp/bootstrap.min.js"></script>
+	<script src="./qdapp/icheck.js"></script>
+	<script src="./qdapp/checkuser.js"></script>
+	<script src="./qdapp/leftnav.js"></script>
+	<script src="./layer/layer.js"></script>
+	<script src="./qdapp/index.js"></script>
+	
+	</body>
+
+</html>

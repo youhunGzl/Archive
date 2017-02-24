@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>        
+	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>  
+	<property name="connection.driver_class">com.mysql.jdbc.Driver</property>  
+	<property name="connection.url">jdbc:mysql://172.16.41.140/digital</property>  
+	<property name="connection.username">root</property>  
+	<property name="connection.password">123456</property>
+	<!-- 自动根据model对象来更新表结构，如果缺少表，则自动建表；如果表里缺少列，则自动添加列。   -->
+    <property name="hibernate.hbm2ddl.auto">update</property>     <!--  输出sql -->
+    <!-- <property name="show_sql">true</property> -->
+        
+    <property name="current_session_context_class">thread</property>
+	
+	
+	<mapping class="com.archive.jpa.TUsers"/>
+	<mapping class="com.archive.jpa.TStaff"/>   
+	<mapping class="com.archive.jpa.TFiles"/> 
+	<mapping class="com.archive.jpa.TMaterial"/> 
+	<mapping class="com.archive.jpa.TMultimedia"/>
+	<mapping class="com.archive.jpa.TEdocument"/>
+	<mapping class="com.archive.jpa.TReserve"/>		
+	<mapping class="com.archive.jpa.TReserveDetail"/>   
+	<mapping class="com.archive.jpa.TRecommend"/>   	
+	<mapping class="com.archive.jpa.TCheckout"/>  
+	<mapping class="com.archive.jpa.TVisited"/>  
+	<mapping class="com.archive.jpa.TLogInfo"/>  
+	<mapping class="com.archive.jpa.TDictionaryType"/>  
+	<mapping class="com.archive.jpa.TDictionary"/>  
+	<mapping class="com.archive.jpa.TInterest"/>  
+	<mapping class="com.archive.jpa.TCatalog"/>  
+	<mapping class="com.archive.jpa.TJournal"/>  
+	<mapping class="com.archive.jpa.TRecord"/>  
+  </session-factory>
+</hibernate-configuration>

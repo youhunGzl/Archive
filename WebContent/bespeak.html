@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<title>登陆</title>
+		<!--[if lt IE 9]>
+		  <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+		   <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="./style/bootstrap.min.css" />
+		<link href="./style/blue.css" rel="stylesheet">
+		<link href="./style/footer.css" rel="stylesheet">
+		<link href="./style/bespeak.css" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="./image/web.ico" media="screen" /> 
+		<link href="./style/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+	</head>
+
+	<body>
+		<header id="section-1">
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="banner">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"><span class="sr-only">toggle</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+					<a class="navbar-brand " href="#">数字档案馆</a>
+				</div>
+				<nav class="navbar-collapse bs-navbar-collapse collapse" style="height:1px" aria-expanded="false" role="navigation">
+					<ul class="nav navbar-nav" id="nav">
+						<!-- <li class="active">
+							<a href="">主页</a>
+						</li>
+						<li>
+							<a href="#">借阅登记</a>
+						</li>
+						<li>
+							<a hrefe="#">预约借阅</a>
+						</li>
+						<li>
+							<a hrefe="#">查询</a>
+						</li>-->
+						
+						<!-- 菜单列表-->
+						
+					</ul>
+						<ul class="nav navbar-nav navbar-right" id="checkname">
+						
+					<!-- 验证用户 -->
+					
+						</ul>  
+				</nav>
+				
+			</div>
+		</nav>
+	</header>
+	<div class="col-sm-12 bespeak_f">
+		<div class="bespeak_form">
+			<div class="col-xs-12 table-responsive" style="padding:0px;height:150px;text-align:center">
+					<table>
+						<thead>
+							<tr>
+								<th>
+									档案资料编号
+								</th>
+								<th>
+									名称
+								</th>
+								<th>
+									作者
+								</th>
+								<th>
+									档案馆
+								</th>
+							</tr>
+						</thead>
+						<tbody id="table">
+						
+						<!-- 表单 -->
+						
+						</tbody>
+					</table>
+				</div>
+			<div class="col-sm-5 col-xs-12" style="height:34px;">
+	                <div class="input-group date form_date col-sm-12" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+	                    <input class="form-control" size="14" type="text" value="" readonly placeholder="预约时间" id="reserve_time">
+	                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+						<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+	                </div>
+					<input type="hidden" id="dtp_input2" value="" id="reserve_time"/><br/>
+            	</div>
+			<div class="col-xs-12" data-toggle="tooltip" data-placement="bottom" title="请输入您的预约理由" style="padding:0px;margin-top:20px;">
+			   <textarea class="col-xs-12" style="height:60px;resize:none;overflow:scroll" cols="3" rows="12" id="borrow_objects"></textarea>
+			</div>
+				
+				<button class="button" onclick="savereserv()">
+	        	<span class="line line-top"></span>
+	            <span class="line line-right"></span>
+	            <span class="line line-bottom"></span>
+	            <span class="line line-left"></span>
+	                预约
+	            </button>
+           
+		</div>
+	</div>
+	<footer>
+			<ul class="list-unstyled">
+				<h3>专题档案</h3>
+				<li>
+					<a href="">公民档案</a>
+				</li>
+				<li>
+					<a href="">历史档案</a>
+				</li>
+				<li>
+					<a href="">城市档案</a>
+				</li>
+				<li>
+					<a herf="">土地档案</a>
+				</li>
+				<li>
+					<a href="">...more</a>
+				</li>
+			</ul>
+			<ul class="list-unstyled">
+				<h3>资源</h3>
+				<li>
+					<a href="">最新公布</a>
+				</li>
+				<li>
+					<a href="">A-Z字母索引</a>
+				</li>
+				<li>
+					<a href=- "">发布时间索引</a>
+				</li>
+				<li>
+					<a href="">类别索引</a>
+				</li>
+				<li>
+					<a href="">档案公布</a>
+				</li>
+			</ul>
+			<ul class="list-unstyled">
+				<h3>关于我们</h3>
+				<li>
+					<a href="">使用指南</a>
+				</li>
+				<li>
+					<a href="">档案利用制度</a>
+				</li>
+				<li>
+					<a href="">在线咨询</a>
+				</li>
+				<li>
+					<a href="">FAQ</a>
+				</li>
+				<li>
+					<a href="">收藏夹</a>
+				</li>
+				<li>
+					<a href="">联系我们</a>
+				</li>
+			</ul>
+			<ul class="list-unstyled affix-bottom">
+				<h3>友情链接</h3>
+				<li>
+					<a href="">国家档案馆</a>
+				</li>
+				<li>
+					<a href="">广东省档案馆</a>
+				</li>
+				<li>
+					<a href="">美国国家档案馆</a>
+				</li>
+				<li>
+					<a href="">....more</a>
+				</li>
+			</ul>
+		</footer>
+		<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+		<script src="./qdapp/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./qdapp/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+		<script src="./qdapp/leftnav.js"></script>
+		<script src="./qdapp/checkuser.js"></script>
+		<script src="./qdapp/savereserv.js"></script>
+		<script src="./layer/layer.js"></script>
+		<script src="./qdapp/bespeak.js"></script>
+		
+	</body>
+
+</html>

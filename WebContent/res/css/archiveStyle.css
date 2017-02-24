@@ -1,0 +1,12 @@
+/*!
+ * archive style by gll
+/*
+
+/*
+*页头的样式
+*/
+/*上右下左,可简写为padding: 30px 0;表示上下为30px，左右为0*/
+#logo,
+#search{
+	padding: 30px 0 30px 0; 
+}

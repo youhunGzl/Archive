@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" name="viewport"
+	content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>个人中心</title>
+<!--[if lt IE 9]>
+		  <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+		   <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+<link rel="stylesheet"
+	href="./style/bootstrap.min.css" />
+<link href="./style/user.css" rel="stylesheet" />
+<link href="./style/history.css" rel="stylesheet" />
+<link href="./style/footer.css" rel="stylesheet" />
+<link href="./style/systemnews.css" rel="stylesheet" />
+<link rel="shortcut icon" type="image/x-icon" href="./image/web.ico" media="screen" />
+</head>
+
+<body>
+			<header id="section-1">
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="banner">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse"><span class="sr-only">toggle</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+					<a class="navbar-brand " href="#">欢迎来到数字档案馆</a>
+				</div>
+				<nav class="navbar-collapse bs-navbar-collapse collapse" style="height:1px" aria-expanded="false" role="navigation">
+					<ul class="nav navbar-nav" id="nav">
+						<!-- <li class="active">
+							<a href="">主页</a>
+						</li>
+						<li>
+							<a href="#">借阅登记</a>
+						</li>
+						<li>
+							<a hrefe="#">预约借阅</a>
+						</li>
+						<li>
+							<a hrefe="#">查询</a>
+						</li>-->
+						
+						<!-- 菜单列表-->
+						
+					</ul>
+						<ul class="nav navbar-nav navbar-right" id="checkname">
+						
+					<!-- 验证用户 -->
+					
+						</ul>  
+						<ul class="nav navbar-nav visible-xs">
+				<li onclick="user()"><a href="javascript:void(0);">个人信息</a></li>
+				<li onclick="history()"><a href="javascript:void(0);">浏览历史</a></li>
+				<li onclick="rdhistory()"><a href="javascript:void(0);">借阅历史</a></li>
+				<li onclick="systemnews()"><a href="javascript:void(0);">系统消息</a></li>
+				
+			</ul>
+				</nav>
+			</div>
+		</nav>
+	</header>
+	<div class="record"><h1>数字档案馆</h1><span class="pull-right visible-md">记录历史传承未来</span><span><b>Y</b>our story ,our history</span></div>
+	<div class="userimage hidden-xs"><img src="" class="cirborder" alt="用户头像" id="img" /><span class="logintime"></span></div>
+	<ul class="leftdao visible-xs">
+				<li onclick="user()" class="person">个人信息<ul class="personal"><li>基本信息</li><li>修改密码</li><li>证件信息</li></ul></li>
+				<li onclick="history()">浏览历史</li>
+				<li onclick="rdhistory()">借阅历史</li>
+				<li onclick="systemnews()">系统消息</li>
+			</ul>
+	<div style="width:86%;margin:0 auto">
+		<div class="col-md-2 col-sm-3 col-xs-3 hidden-xs">
+			<ul class="leftdao">
+				<li onclick="user()" class="person">个人信息<b class="haircut">&gt;</b><ul class="personal"><li>基本信息</li><li>修改密码</li><li>证件信息</li></ul></li>
+				<li onclick="history()">浏览历史</li>
+				<li onclick="rdhistory()">借阅历史</li>
+				<li onclick="systemnews()">系统消息</li>
+				<li>信息推荐</li>
+			</ul>
+		</div>
+		<div class="col-sm-9 col-xs-12" id="userbody">
+			<form class="form-horizontal changes" id="form1">
+				<label class="col-sm-3 col-xs-12 control-label">电子邮箱</label>
+				<div class="col-sm-7 col-xs-12 input-group" data-toggle="tooltip"
+					data-placement="right" title="请输入电子邮箱">
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-envelope"></span></span><input type="text"
+						class="form-control" id="email" />
+				</div>
+				<br /> <label class="col-sm-3 col-xs-12 control-label">性别</label>
+				<select class="select col-sm-7 col-xs-12" id="sex">
+					<option value="0">男</option>
+					<option value="1">女</option></select> <br /> <label
+					class="col-sm-3 col-xs-12 control-label">职业</label>
+				<div class="col-sm-7 col-xs-12 input-group" data-toggle="tooltip"
+					data-placement="right" title="请输入职业">
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-credit-card"></span></span><input type="text"
+						class="form-control" id="profession" />
+				</div>
+				<br /> <label class="col-sm-3 col-xs-12 control-label">联系电话</label>
+				<div class="col-sm-7 col-xs-12 input-group" data-toggle="tooltip"
+					data-placement="right" title="请输入联系电话">
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-phone"></span></span><input type="text"
+						class="form-control" id="phone" />
+				</div>
+				<br /> <label class="col-sm-3 col-xs-12 control-label">联系地址</label>
+				<div class="col-sm-7 col-xs-12 input-group" data-toggle="tooltip"
+					data-placement="right" title="请输入联系地址">
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-home"></span></span><input type="text"
+						class="form-control" id="address" />
+				</div>
+				<br /> <label class="col-sm-3 col-xs-12 control-label">邮编</label>
+				<div class="col-sm-7 col-xs-12 input-group" data-toggle="tooltip"
+					data-placement="right" title="请输入邮编">
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-flag"></span></span><input type="text"
+						class="form-control" id="zipcode" />
+				</div>
+				<br /> <label class="col-sm-3 col-xs-12 control-label">个人说明</label>
+				<div class="col-sm-7 col-xs-12 input-group" data-toggle="tooltip"
+					data-placement="right" title="个人说明">
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-lock"></span></span><input type="text"
+						class="form-control" id="selflabel" />
+				</div>
+				<br /> <label class="col-sm-3 col-xs-12 control-label">备注</label>
+				<div class="col-sm-7 col-xs-12 input-group" data-toggle="tooltip"
+					data-placement="right" title="请输入备注">
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-lock"></span></span><input type="text"
+						class="form-control" id="tis" />
+				</div>
+				<br /> <input type="button" class="btn btn-primary pull-right "
+					id="update" value="修改" /> <input type="button"
+					class="btn btn-primary pull-right " style="margin:0px 10px"
+					id="updateuser" value="提交" /> <input type="button"
+					class="btn btn-primary pull-right " id="back" value="返回" />
+			</form>
+			<form class="form-horizontal changes" id="form2">
+				<label class="col-sm-3 col-xs-12 control-label">原密码</label>
+				<div class="col-sm-7 col-xs-12 input-group" data-toggle="tooltip"
+					data-placement="right" title="请输入原密码">
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-lock"></span></span><input type="password"
+						class="form-control" id="ypassword" name="ypassword" />
+				</div>
+				<br /> <label class="col-sm-3 col-xs-12 control-label">新密码</label>
+				<div class="col-sm-7 col-xs-12 input-group" data-toggle="tooltip"
+					data-placement="right" title="请输入新密码">
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-lock"></span></span><input type="password"
+						class="form-control" id="npassword" name="npassword" />
+				</div>
+				<br /> <label class="col-sm-3 col-xs-12 control-label">确认新密码</label>
+				<div class="col-sm-7 col-xs-12 input-group" data-toggle="tooltip"
+					data-placement="right" title="请确认密码">
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-lock"></span></span><input type="password"
+						class="form-control" id="cpa" name="cpa" />
+				</div>
+				<br /> <input type="button" class="btn btn-primary pull-right"
+					id="updatepwd" style="margin:0px 10px" value="提交" /> <input
+					type="reset" class="btn btn-primary pull-right " id="reset"
+					value="重置" />
+
+			</form>
+			<form class="form-horizontal changes" id="form3">
+				<label class="col-sm-3 col-xs-12 control-label">原证件类型</label> <select
+					class="select col-xs-12 col-sm-7" id="ycert_type">
+					<option value="身份证">身份证</option>
+					<option value="军人证">军人证</option>
+					<option value="护照">护照</option>
+					<option value="驾照">驾照</option></select> <br /> <label
+					class="col-sm-3 control-label">原证件号</label>
+				<div class="col-sm-7 input-group" data-toggle="tooltip"
+					data-placement="right" title="请输入原证件号码">
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-list-alt"></span></span><input type="text"
+						class="form-control" id="ycert_no" />
+				</div>
+				<br /> <label class="col-sm-3 control-label">新证件类型</label> <select
+					class="select col-xs-12 col-sm-7" id="ncert_type">
+					<option value="身份证">身份证</option>
+					<option value="军人证">军人证</option>
+					<option value="护照">护照</option>
+					<option value="驾照">驾照</option></select> <br /> <label
+					class="col-sm-3 control-label">新证件号</label>
+				<div class="col-sm-7 input-group" data-toggle="tooltip"
+					data-placement="right" title="请输入新证件号码">
+					<span class="input-group-addon"><span
+						class="glyphicon glyphicon-list-alt"></span></span><input type="text"
+						class="form-control" id="ncert_no" />
+				</div>
+				<br /> <input type="button" class="btn btn-primary pull-right"
+					id="updatecert" style="margin:0px 10px" value="提交" /> <input
+					type="reset" class="btn btn-primary pull-right " id="reset"
+					value="重置" />
+
+			</form>
+		</div>
+		<div class="col-sm-9 col-xs-12" id="historybody">
+		<div class="col-xs-12">
+			<div class="top hidden-xs ">
+					<a href="#" title="列表模式" class="btn-list-open" id="changel"></a>
+					<a href="#" title="卡片模式" class="btn-card-off" id="changec"></a>
+			</div>
+			<ul class="rlist col-xs-12 col-sm-11" id="history">
+				
+			</ul>
+			<nav class="pull-right" id="page">
+				<!-- <ul class="pagination" id="page">
+				
+					<li class="disabled"><a href="#">&laquo;</a></li>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">&raquo;</a></li> 
+					
+				</ul> -->
+				
+			</nav>
+		</div>
+		<form action="">
+			<input type="hidden" name="totalPages" id="totalPages"/><!-- 总页数 -->
+			<input type="hidden" name="currentPage" id="currentPage" value="1"/><!-- 当前页数 -->
+		</form>
+	</div>
+		<div class="col-xs-12 col-xs-9" id="recordhistorybody">
+			<div class="panel-group" id="accordion">
+			
+				<!-- <div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+						<span>单号：</span>
+							<a class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#1">详情</a>
+						</h4>
+					</div>
+					<div id="1" class="panel-collapse collapse in" id="reservemain">
+						<div class="panel-body">
+							
+									<a href="#"><span>标题</span><span>预约时间</span><span class="pull-right">审核状态</span></a>
+						</div>
+						<div class="panel-body">
+									<a href="#"><span>标题</span><span>预约时间</span><span class="pull-right">审核状态</span></a>
+						</div>
+						<div class="panel-body">
+									<a href="#"><span>标题</span><span>预约时间</span><span class="pull-right">审核状态</span></a>
+						</div>
+					</div>
+				</div> -->
+				
+			</div>
+		</div>
+		<div class="col-md-9" style="padding-right:0px;margin-top:5%" id="systemnewsbody">
+			
+			
+			<ul class="list col-xs-11 col-sm-8 col-md-12" id="systemnews">
+				<!-- <li>
+					<h4>标题</h4>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><img src="image/go.png" alt="查看详情"/></span>您所预约的文档已被管理员审核，请在2016-12-12凭借预约号：20161212111进行预约借阅。</p>
+					<span>日期</span>
+					
+				</li>
+				 -->
+			</ul>
+		</div>
+	</div>
+		<a href="#section-1"><img src="image/up.png"
+			style="position:fixed;bottom:80px;right:3%" alt="返回顶部" id="amdee" class="hide" /></a>
+	<footer>
+		<ul class="list-unstyled">
+			<h3>专题档案</h3>
+			<li><a href="">公民档案</a></li>
+			<li><a href="">历史档案</a></li>
+			<li><a href="">城市档案</a></li>
+			<li><a herf="">土地档案</a></li>
+			<li><a href="">...more</a></li>
+		</ul>
+		<ul class="list-unstyled">
+			<h3>资源</h3>
+			<li><a href="">最新公布</a></li>
+			<li><a href="">A-Z字母索引</a></li>
+			<li><a href=-"">发布时间索引</a></li>
+			<li><a href="">类别索引</a></li>
+			<li><a href="">档案公布</a></li>
+		</ul>
+		<ul class="list-unstyled">
+			<h3>关于我们</h3>
+			<li><a href="">使用指南</a></li>
+			<li><a href="">档案利用制度</a></li>
+			<li><a href="">在线咨询</a></li>
+			<li><a href="">FAQ</a></li>
+			<li><a href="">收藏夹</a></li>
+			<li><a href="">联系我们</a></li>
+		</ul>
+		<ul class="list-unstyled">
+			<h3>友情链接</h3>
+			<li><a href="">国家档案馆</a></li>
+			<li><a href="">广东省档案馆</a></li>
+			<li><a href="">美国国家档案馆</a></li>
+			<li><a href="">....more</a></li>
+		</ul>
+	</footer>
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script
+		src="./qdapp/bootstrap.min.js"></script>
+	<script src="./qdapp/choice.js"></script>
+	<script src="./qdapp/checkuser.js"></script>
+	<script src="./qdapp/leftnav.js"></script>
+	<script src="./qdapp/visithistory.js"></script>
+	<script src="./layer/layer.js"></script>
+	<script src="./qdapp/user.js"></script>
+    <script src="./qdapp/user_two.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport"
+	content="width=device-width, initial-scale=1.0,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+<title>注册</title>
+<!--[if lt IE 9]>
+  <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+   <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet"
+	href="./style/bootstrap.min.css" />
+<link rel="stylesheet" href="./style/register.css" />
+<link rel="stylesheet" href="./style/footer.css">
+<link href="./style/blue.css" rel="stylesheet">
+</head>
+
+<body>
+	<header id="section-1">
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="banner">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" type="button"
+						data-toggle="collapse" data-target=".bs-navbar-collapse">
+						<span class="sr-only">toggle</span><span class="icon-bar"></span><span
+							class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand " href="#">数字档案馆</a>
+				</div>
+				<nav class="navbar-collapse bs-navbar-collapse collapse"
+					style="height:1px" aria-expanded="false" role="navigation">
+					<ul class="nav navbar-nav" id="nav">
+						<!-- <li class="active">
+							<a href="">主页</a>
+						</li>
+						<li>
+							<a href="#">借阅登记</a>
+						</li>
+						<li>
+							<a hrefe="#">预约借阅</a>
+						</li>
+						<li>
+							<a hrefe="#">查询</a>
+						</li>-->
+						
+						<!-- 菜单列表-->
+						
+					</ul>
+						<ul class="nav navbar-nav navbar-right" id="checkname">
+						
+					<!-- 验证用户 -->
+					
+						</ul> 
+				</nav>
+
+			</div>
+		</nav>
+	</header>
+	<form name="myform">
+		<ul id="progress">
+			<li class="active">账号设置</li>
+			<li>证件信息</li>
+			<li>个人信息</li>
+		</ul>
+		<fieldset>
+			<h1>创建账号</h1>
+			<br /> <label class="col-sm-3 col-xs-12">用户名</label>
+			<div class="input-group col-sm-7 col-xs-12" data-toggle="tooltip" data-placement="right"
+				title="3-16位的字母或数字,且必须以字母开头">
+				<span class="input-group-addon"><span
+					class="glyphicon glyphicon-user"></span></span> <input type="text"
+					name="username" class="form-control" id="username" />
+			</div>
+			<br /> <label class="col-sm-3 col-xs-12">密码</label>
+			<div class="input-group col-sm-7 col-xs-12" data-toggle="tooltip" data-placement="right"
+				title="6-20位字母或数字">
+				<span class="input-group-addon"><span
+					class="glyphicon glyphicon-lock"></span></span> <input type="password"
+					name="pas" class="form-control" id="password" />
+			</div>
+			<br /> <label class="col-sm-3 col-xs-12">确认密码</label>
+			<div class="input-group col-sm-7 col-xs-12" data-toggle="tooltip" data-placement="right"
+				title="请确认密码">
+				<span class="input-group-addon"> <span
+					class="glyphicon glyphicon-ok"></span>
+				</span> <input type="password" name="cpa" class="form-control" id="cpa" />
+			</div>
+			<br /><div class="center-block"><input type="button" id="next_one" class="addborder next" value="Next" /></div>
+		</fieldset>
+		<fieldset>
+			<h1>证件信息</h1>
+			<br> <label class="col-sm-3 col-xs-12">证件名称</label> <select
+				class=" col-sm-7 col-xs-12 paper" id="cert_type" data-toggle="tooltip"
+				data-placement="right" title="必选">
+				<option value="身份证">身份证</option>
+				<option value="军人证">军人证</option>
+				<option value="护照">护照</option>
+				<option value="驾照">驾照</option>
+			</select> <br /> <label class="col-sm-3 col-xs-12">证件号码</label>
+			<div class="input-group col-sm-7 col-xs-12" data-toggle="tooltip" data-placement="right"
+				title="身份证号码为15位或者18位">
+				<span class="input-group-addon"> <span
+					class="glyphicon glyphicon-list-alt"></span>
+				</span> <input type="text" name="cid" class="form-control" id="cid" />
+			</div>
+			<br /> <input type="button" id="previous_one" class="addborder previous" value="previous" /> &nbsp;<input type="button" class="addborder next" id="next_two" value="Next" />
+		</fieldset>
+		<fieldset>
+			<h1>个人信息</h1>
+			<label class="col-sm-4 col-xs-12">真实姓名</label>
+        	<div class="input-group col-sm-7 col-xs-12 " data-toggle="tooltip" data-placement="bottom" title="必填">
+				<span class="input-group-addon"><span
+					class="glyphicon glyphicon-user"></span></span> <input type="text"
+					name="name" class="form-control" id="name" />
+			</div>
+			<br /> <label class="col-sm-4 col-xs-12">电话</label>
+            <div class="input-group col-sm-7 col-xs-12 " data-toggle="tooltip" data-placement="bottom" title="必填；">
+				<span class="input-group-addon"><span
+					class="glyphicon glyphicon-phone"></span></span> <input type="text"
+					name="tel" class="form-control" id="tel" />
+			</div>
+
+			<br /> 	<label class="col-sm-4 col-xs-12">联系地址</label>
+            <div class="input-group col-sm-7 col-xs-12 " data-toggle="tooltip" data-placement="bottom" title="必填；">
+
+				<span class="input-group-addon"><span
+					class="glyphicon glyphicon-home"></span></span> <input tyoe="text"
+					name="address" class="form-control" id="address" />
+			</div>
+			<br /> <label class="col-sm-4 col-xs-12">电子邮箱</label>
+            <div class="input-group col-sm-7 col-xs-12 " data-toggle="tooltip" data-placement="bottom" title="必填；">
+
+				<span class="input-group-addon"><span
+					class="glyphicon glyphicon-envelope"></span></span> <input tyoe="text"
+					name="address" class="form-control" id="email" />
+			</div>
+			<br /> <label class="col-sm-4 col-xs-12">职业</label>
+             <div class="input-group col-sm-7 col-xs-12 " data-toggle="tooltip" data-placement="bottom" title="请输入您的职业">
+
+				<span class="input-group-addon"><span
+					class="glyphicon glyphicon-credit-card"></span></span> <input tyoe="text"
+					name="profession" class="form-control" id="profession" />
+			</div>
+			<br />
+			<div class="form-group">
+				<label class="col-sm-4 col-xs-12">性别</label> <select class="col-sm-7 col-xs-12 paper"
+					id="sex">
+					<option value="0">男</option>
+					<option value="1">女</option>
+				</select>
+
+			</div>
+			<div class="form-group">
+				<label class="col-sm-3">个人说明</label>
+				<div class="col-sm-8"><input type="checkbox"  />文学
+				<input type="checkbox" />小说
+				<input type="checkbox"/>程序开发课程<input type="checkbox"/>历史
+				<input type="checkbox"/>旅游
+				<input type="checkbox"/>数学模型
+			</div>
+			<br />
+				<input type="button" class="addborder previous" value="previous" /> &nbsp;<input type="button" id="submit" class="addborder" value="submit" />
+		</fieldset>
+	</form>
+	<footer>
+		<ul class="list-unstyled">
+			<h3>专题档案</h3>
+			<li><a href="">公民档案</a></li>
+			<li><a href="">历史档案</a></li>
+			<li><a href="">城市档案</a></li>
+			<li><a herf="">土地档案</a></li>
+			<li><a href="">...more</a></li>
+		</ul>
+		<ul class="list-unstyled">
+			<h3>资源</h3>
+			<li><a href="">最新公布</a></li>
+			<li><a href="">A-Z字母索引</a></li>
+			<li><a href=-"">发布时间索引</a></li>
+			<li><a href="">类别索引</a></li>
+			<li><a href="">档案公布</a></li>
+		</ul>
+		<ul class="list-unstyled">
+			<h3>关于我们</h3>
+			<li><a href="">使用指南</a></li>
+			<li><a href="">档案利用制度</a></li>
+			<li><a href="">在线咨询</a></li>
+			<li><a href="">FAQ</a></li>
+			<li><a href="">收藏夹</a></li>
+			<li><a href="">联系我们</a></li>
+		</ul>
+		<ul class="list-unstyled affix-bottom">
+			<h3>友情链接</h3>
+			<li><a href="">国家档案馆</a></li>
+			<li><a href="">广东省档案馆</a></li>
+			<li><a href="">美国国家档案馆</a></li>
+			<li><a href="">....more</a></li>
+		</ul>
+	</footer>
+
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script src="./qdapp/jquery-ui.js"></script>
+	<script
+		src="./qdapp/bootstrap.min.js"></script>
+	<script src="./qdapp/icheck.js"></script>
+	<script src="./qdapp/checkuser.js"></script>
+	<script src="./qdapp/leftnav.js"></script>
+	<script src="./qdapp/zhuce.js"></script>
+	<script src="./layer/layer.js"></script>
+</body>
+</html>

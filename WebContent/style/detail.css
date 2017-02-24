@@ -1,0 +1,17 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-style:"微软雅黑";
+}
+.information{
+	margin-top: 100px;
+	padding:20px 5%;
+	height:600px;
+	position: relative;
+}
+.excessinfo{
+	position: absolute;
+	bottom: 0px;
+}
+
+

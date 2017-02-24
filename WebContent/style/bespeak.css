@@ -1,0 +1,121 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	font-family: "微软雅黑";
+	position: relative;
+}
+.bespeak_f{
+	background-image: url(../image/clouds.jpg);
+	background-color:#6699ff;
+	background-size: 100%;
+	background-repeat: repeat-x;
+	height: 700px;padding-top: 130px;text-align:center;
+}
+
+@media screen and (max-width: 500px) and (min-width: 200px) {
+    .bespeak_form{
+	width:100%;padding:50px;background-color: rgba(255,255,255,1);float: right;font-size: 14px;
+	margin:0 auto;border-radius: 6px;
+	}
+}
+@media screen and (max-width: 800px) and (min-width: 500px) {
+    .bespeak_form{
+	width:80%;padding:50px;background-color: rgba(255,255,255,1);float: right;font-size: 14px;
+	margin:0 auto;border-radius: 6px;
+	}
+}
+@media screen and (max-width: 1400px) and (min-width: 800px) {
+	.bespeak_form{
+	width:45%;padding:50px;padding-bottom: 30px;
+	background-color: rgba(255,255,255,1);font-size: 14px;height:460px;
+	margin:0 auto;border-radius: 6px;
+}
+}
+.bespeak_form{text-align: center;
+		border:6px solid transparent;
+	border-image:url(../image/border.png) 22 round;
+	-moz-border-image: url(../image/border.png) 22 round; /* Old Firefox */
+	-webkit-border-image: url(../image/border.png) 22 22 22 22 round round; /* Safari */
+	-o-border-image: url(../image/border.png) 22 round; /* Opera */
+}
+.col-sm-5{
+	padding:0px;
+	margin-top:20px;
+}
+.card_kind{
+	height:34px;
+}
+table{width:100%;padding:10px;overflow:scroll;font-size: 1.2em;}
+.button{
+	background:#69F;
+	width:100px;
+	height:50px;
+	line-height:50px;
+	color:#fff;
+	font-size:1.2em;
+	border:1px #fff solid;
+	margin:0px auto;
+	margin-top: 30px;
+	float: right;
+	position:relative;
+	transition:0.4s ease;
+	-moz-transition:0.4s ease;
+	-ms-transition:0.4s ease;
+	-o-transition:0.4s ease;
+}
+.line{
+	display:block;
+	position:absolute;
+	background:none;
+	transition:0.4s ease;
+	-moz-transition:0.4s ease;
+	-ms-transition:0.4s ease;
+	-o-transition:0.4s ease;
+}
+.button:hover .line{
+	background:#69F;
+}
+.line-top{
+	height:1px;
+	width:0px;
+	left:-100%;
+}
+.button:hover .line-top{
+	width:100%;
+	left:0px;	
+}
+.line-right{
+	height:0px;
+	width:1px;
+	top:-100%;
+	right:0px;
+}
+.button:hover .line-right{
+	height:100%;
+	top:0px;
+}
+.line-bottom{
+	height:0px;
+	width:1px;
+	left:0px;
+	bottom:-100%;
+}
+.button:hover .line-bottom{
+	height:100%;
+	bottom:0px;
+}
+.line-left{
+	width:0px;
+	height:1px;
+	right:-100%;
+	bottom:0px;
+}
+.button:hover .line-left{
+	width:100%;
+	right:0px;
+}
+footer{
+	margin-top: 0px;clear:both;
+}
